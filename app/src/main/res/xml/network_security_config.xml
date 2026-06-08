@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- Permite HTTP apenas para domínios da NASA (fotos antigas usam http://) -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">mars.nasa.gov</domain>
+        <domain includeSubdomains="true">api.nasa.gov</domain>
+        <domain includeSubdomains="true">marsrovers.nasa.gov</domain>
+    </domain-config>
+    <!-- Todo o resto continua exigindo HTTPS -->
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SpaceConnect" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#09090F</item>
+        <item name="android:navigationBarColor">#09090F</item>
+        <item name="android:windowBackground">#09090F</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="Theme.SpaceConnect.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#09090F</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_rocket</item>
+        <item name="postSplashScreenTheme">@style/Theme.SpaceConnect</item>
+    </style>
+</resources>
