@@ -266,7 +266,7 @@ private fun HeroBanner(onNavigateToFavorites: () -> Unit) {
             modifier = Modifier
                 .align(Alignment.TopEnd)
                 .offset(x = 38.dp, y = 38.dp)
-                .size(width = 200.dp, height = 90.dp)
+                .size(width = 300.dp, height = 60.dp)
                 .graphicsLayer {
                     rotationZ = -12f
                 }
