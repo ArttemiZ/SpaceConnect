@@ -28,6 +28,10 @@ import br.com.fiap.spaceconnect.presentation.viewmodel.HomeViewModel
 import br.com.fiap.spaceconnect.presentation.viewmodel.UiState
 import br.com.fiap.spaceconnect.ui.theme.SpaceColors
 import br.com.fiap.spaceconnect.ui.theme.SpaceType
+import androidx.compose.foundation.Canvas
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.graphics.graphicsLayer
 
 @Composable
 fun HomeScreen(
@@ -208,6 +212,7 @@ private fun HeroBanner(onNavigateToFavorites: () -> Unit) {
                 )
         )
 
+
         // Planeta roxo
         Box(
             modifier = Modifier
@@ -256,45 +261,77 @@ private fun HeroBanner(onNavigateToFavorites: () -> Unit) {
             )
         }
 
-        //Anel do planeta
-        Box(
+        // Anel estilo Saturno
+        Canvas(
             modifier = Modifier
                 .align(Alignment.TopEnd)
-                .offset(x = 46.dp, y = 32.dp)
-                .width(178.dp)
-                .height(80.dp)
-                .background(
-                    Brush.horizontalGradient(
-                        listOf(
-                            Color.Transparent,
-                            Color(0x2A8250DC),
-                            Color(0x3DA060F0),
-                            Color(0x2A8250DC),
-                            Color.Transparent
-                        )
-                    ),
-                    RoundedCornerShape(50)
-                )
-        )
-        // Linha superior do anel
-        Box(
-            modifier = Modifier
-                .align(Alignment.TopEnd)
-                .offset(x = 46.dp, y = 72.dp)
-                .width(178.dp)
-                .height(1.dp)
-                .background(
-                    Brush.horizontalGradient(
-                        listOf(
-                            Color.Transparent,
-                            Color(0x55A070FF),
-                            Color(0x88C090FF),
-                            Color(0x55A070FF),
-                            Color.Transparent
-                        )
+                .offset(x = 38.dp, y = 38.dp)
+                .size(width = 200.dp, height = 90.dp)
+                .graphicsLayer {
+                    rotationZ = -12f
+                }
+        ) {
+
+            // Faixa externa
+            drawArc(
+                brush = Brush.sweepGradient(
+                    listOf(
+                        Color.Transparent,
+                        Color(0x22FFFFFF),
+                        Color(0x55C7B0FF),
+                        Color(0x22FFFFFF),
+                        Color.Transparent
                     )
+                ),
+                startAngle = 0f,
+                sweepAngle = 360f,
+                useCenter = false,
+                style = Stroke(
+                    width = 10f,
+                    cap = StrokeCap.Round
                 )
-        )
+            )
+
+            // Faixa intermediária
+            drawArc(
+                brush = Brush.sweepGradient(
+                    listOf(
+                        Color.Transparent,
+                        Color(0x66B48CFF),
+                        Color(0x99E0C0FF),
+                        Color(0x66B48CFF),
+                        Color.Transparent
+                    )
+                ),
+                startAngle = 0f,
+                sweepAngle = 360f,
+                useCenter = false,
+                style = Stroke(
+                    width = 6f,
+                    cap = StrokeCap.Round
+                )
+            )
+
+            // Faixa interna
+            drawArc(
+                brush = Brush.sweepGradient(
+                    listOf(
+                        Color.Transparent,
+                        Color(0x33FFFFFF),
+                        Color(0x88FFFFFF),
+                        Color(0x33FFFFFF),
+                        Color.Transparent
+                    )
+                ),
+                startAngle = 0f,
+                sweepAngle = 360f,
+                useCenter = false,
+                style = Stroke(
+                    width = 2f,
+                    cap = StrokeCap.Round
+                )
+            )
+        }
 
         //Top bar
         Column(modifier = Modifier.fillMaxSize()) {
