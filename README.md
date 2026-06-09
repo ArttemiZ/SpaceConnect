@@ -63,11 +63,15 @@ Splash Screen
 
 | Splash | Onboarding | Home |
 |--------|-----------|------|
-| ![splash](docs/splash.png) | ![onboarding](docs/onboarding.png) | ![home](docs/home.png) |
+| ![splash](docs/splash.png) | ![onboarding](docs/onboarding.png) | <img width="1080" height="2400" alt="Screenshot_20260609_182210" src="https://github.com/user-attachments/assets/e2caee4e-9c08-412c-8a45-a1fc133e3ca1" />
+ |
 
 | NEO Radar | Galeria Marte | Favoritos |
 |-----------|--------------|-----------|
-| ![neo](docs/neo.png) | ![mars](docs/mars.png) | ![fav](docs/favorites.png) |
+| <img width="1080" height="2400" alt="Screenshot_20260609_182349" src="https://github.com/user-attachments/assets/09258a8f-1446-48aa-8858-ac10939e56a6" />
+ |<img width="1080" height="2400" alt="Screenshot_20260609_182448" src="https://github.com/user-attachments/assets/19c2bd2a-4631-402c-930e-790518a4e9a1" />
+ |<img width="1080" height="2400" alt="Screenshot_20260609_182516" src="https://github.com/user-attachments/assets/07f4e3fd-43c6-4ef8-ab3d-217494727452" />
+ |
 
 ---
 
@@ -75,7 +79,7 @@ Splash Screen
 
 ### NASA Open APIs (gratuitas)
 - **Base URL:** `https://api.nasa.gov/`
-- **API Key:** `DEMO_KEY` (30 req/hora) — substituível por chave gratuita em [api.nasa.gov](https://api.nasa.gov)
+- **API Key:** `Trhk9ov5vRQjWZevh3G1SrsnmnOvWmDn0CDHAs29` 
 
 | Endpoint | Descrição |
 |----------|-----------|
@@ -182,12 +186,12 @@ git clone https://github.com/ArttemiZ/SpaceConnect.git
 | Nome | RM |
 |------|----|
 | Inacia dos Santos Silva | RM 553401 |
-| Tony Khaled Osman  | RM XXXXX |
+| Tony Khaled Osman  | RM 553050 |
 ---
 
 ## 📹 Vídeo Pitch
 
-🎬 [Link do YouTube — a ser inserido após gravação]
+🎬 https://youtu.be/VqXEzRIPUy0
 
 ---
 
