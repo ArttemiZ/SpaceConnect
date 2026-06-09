@@ -1,4 +1,4 @@
-﻿# 🚀 Space Connect — FIAP Global Solution 2026.1
+﻿#  Space Connect — FIAP Global Solution 2026.1
 
 > **Tema:** Space Connect — Tecnologia Espacial Aplicada a Desafios Reais  
 > **Disciplina:** Android Kotlin Developer  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📱 Descrição da Solução
+##  Descrição da Solução
 
 **Space Connect** é um aplicativo Android nativo que conecta o usuário ao ecossistema de dados espaciais da NASA em tempo real. A proposta está alinhada ao tema da Global Solution 2026.1: conectar a exploração espacial com impacto positivo na Terra, usando dados orbitais para informar, educar e engajar pessoas com a nova economia espacial.
 
@@ -20,7 +20,7 @@ O app consome três APIs públicas e gratuitas da NASA:
 
 ---
 
-## 🛰️ Tema da Global Solution
+##  Tema da Global Solution
 
 **Space Connect** — Tecnologia Espacial Aplicada a Desafios Reais  
 ODS relacionados: ODS 9 (Indústria, inovação e infraestrutura), ODS 13 (Ação climática)
@@ -32,7 +32,7 @@ O app demonstra como dados espaciais podem ser acessíveis ao público geral, pr
 
 ---
 
-## 🗺️ Fluxo de Telas
+##  Fluxo de Telas
 
 ```
 Splash Screen
@@ -58,7 +58,7 @@ Splash Screen
 
 ---
 
-## 📸 Prints das Telas
+##  Prints das Telas
 
 
 | Splash | Onboarding | Home |
@@ -75,7 +75,7 @@ Splash Screen
 
 ---
 
-## 🌐 APIs Utilizadas
+##  APIs Utilizadas
 
 ### NASA Open APIs (gratuitas)
 - **Base URL:** `https://api.nasa.gov/`
@@ -89,7 +89,7 @@ Splash Screen
 
 ---
 
-## 🏗️ Explicação da Arquitetura
+##  Explicação da Arquitetura
 
 O projeto segue **Clean Architecture** com separação em 3 camadas:
 
@@ -141,7 +141,7 @@ app/src/main/java/br/com/fiap/spaceconnect/
 
 ---
 
-## 🛠️ Tecnologias e Dependências
+##  Tecnologias e Dependências
 
 | Tecnologia | Versão | Uso |
 |-----------|--------|-----|
@@ -160,7 +160,7 @@ app/src/main/java/br/com/fiap/spaceconnect/
 
 ---
 
-## 🚀 Como Executar
+##  Como Executar
 
 ### Pré-requisitos
 - Android Studio Hedgehog ou superior
@@ -181,7 +181,7 @@ git clone https://github.com/ArttemiZ/SpaceConnect.git
 
 ---
 
-## 👨‍💻 Desenvolvedor(es)
+##  Desenvolvedor(es)
 
 | Nome | RM |
 |------|----|
@@ -189,13 +189,13 @@ git clone https://github.com/ArttemiZ/SpaceConnect.git
 | Tony Khaled Osman  | RM 553050 |
 ---
 
-## 📹 Vídeo Pitch
+##  Vídeo Pitch
 
 🎬 https://youtu.be/VqXEzRIPUy0
 
 ---
 
-## 📋 Checklist de Requisitos
+##  Checklist de Requisitos
 
 - [x] Tela de Splash com animação e verificação de SharedPreferences
 - [x] Tela de Onboarding (4 slides, botões avançar/voltar, salva preferência)
